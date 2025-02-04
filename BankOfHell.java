@@ -11,9 +11,11 @@ public class BankOfHell {
 
         // Task 2 - Print this if the decision is "yes"
         if (decision.equals("yes")) {
-            System.out.println("\nGreat! In one line" +
-                    "\nHow much money do you have in your savings?" +
-                    "\nAnd, how much do you owe in credit card debt");
+            System.out.println("""
+
+                    Great!
+                    How much money do you have in your savings?
+                    And, how much do you owe in credit card debt""");
 
             // Task 3 - Pick up each value
 
