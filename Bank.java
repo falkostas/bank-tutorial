@@ -3,14 +3,11 @@ import java.util.Scanner;
 public class Bank {
     public static void main(String[] args) {
 
-        // See Learn the Part for the complete instructions (link in resources folder of
-        // Udemy video).
-
-        Scanner scan = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("\n Bank of Hell");
         System.out.println("Are you here to get a mortgage? (yes or no)");
         // Task 1 - Pick up the user's decision.
-        String decision = scan.next();
+        String decision = scanner.next();
 
         // Task 2 - Print this if the decision is "yes"
         if (decision.equals("yes")) {
@@ -20,20 +17,20 @@ public class Bank {
 
             // Task 3 - Pick up each value
 
-            // scan.nextLine();
-            double savings = scan.nextDouble();
-            // scan.nextLine();
-            double debt = scan.nextDouble();
+            // scanner.nextLine();
+            double savings = scanner.nextDouble();
+            // scanner.nextLine();
+            double debt = scanner.nextDouble();
 
             // Task 4 - Pick up number of years
-            scan.nextLine();
+            scanner.nextLine();
             System.out.println("\nHow many years have you worked for?");
-            int years = scan.nextInt();
+            int years = scanner.nextInt();
 
             // Task 5 - Pick up name
-            scan.nextLine();
+            scanner.nextLine();
             System.out.println("What is your name?");
-            String name = scan.next();
+            String name = scanner.next();
 
             // Task 6 - Approve the mortgage if they meet the requirements (see article)
             if (savings >= 10_000 && debt < 5_000 && years >= 2) {
@@ -48,6 +45,6 @@ public class Bank {
             System.out.println("\nOK. Have a nice day!");
         }
 
-        scan.close();
+        scanner.close();
     }
 }
